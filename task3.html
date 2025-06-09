@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fun Learning Portal</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <header>
+    <h1>Fun Learning Portal</h1>
+  </header>
+
+  <section class="card-style carousel-section">
+    <h2>Image-Carousel</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="study.webp" alt="study" />
+        <img src="fsd.png" alt="web development" />
+        <img src="quiz.webp" alt="quiz" />
+        <img src="weather.1bbd88a4-0a17-4750-91a0-cd7d98f58e9d" alt="weather"/>
+        <img src="jokes.png" alt="joke"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-style quiz-section">
+    <h2>Quiz: HTML, CSS, JS</h2>
+    <div class="category-container">
+      <img src="html.png" onclick="startQuiz('html')" />
+      <img src="css.png" onclick="startQuiz('css')" />
+      <img src="js.webp" onclick="startQuiz('js')" />
+    </div>
+    <div id="quiz-box" class="hidden">
+      <p id="timer">Time Left: 60s</p>
+      <p id="question"></p>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result" class="hidden"></div>
+  </section>
+
+  <section class="card-style weather-section">
+    <h2>Weather Forecast</h2>
+    <input type="text" id="city" placeholder="Enter City" />
+    <button onclick="getWeather()">Check Weather</button>
+    <div id="weather-result"></div>
+  </section>
+
+  <section class="card-style joke-section">
+    <h2>Jokes</h2>
+    <button onclick="getJoke()">Tell Me a Joke</button>
+    <p id="joke-text"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fun Learning</p>
+  </footer>
+
+  <script src="task3.js"></script>
+</body>
+</html>

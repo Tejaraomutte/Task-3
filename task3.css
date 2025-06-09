@@ -1,0 +1,204 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f5f7fb;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-style {
+  background-color: #ffffff;
+}
+
+.carousel-section {
+  background: #eef3ff;
+}
+
+.quiz-section {
+  background: #fff1e6;
+}
+
+.weather-section {
+  background: #e6fffa;
+}
+
+.joke-section {
+  background: #fcefee;
+}
+
+.carousel-container {
+  max-width: 600px;
+  max-height:600px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.category-container img:hover {
+  transform: scale(1.05);
+}
+
+#quiz-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#options button {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#options button:hover {
+  background-color: #c5e3ff;
+}
+
+
+#quiz-box, #result {
+  margin-top: 20px;
+}
+
+#question {
+  font-weight: bold;
+}
+
+#options button {
+  width: 250px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #2575fc;
+  background-color: #ffffff;      
+  color: #2575fc;                
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(37, 117, 252, 0.3);
+}
+
+#options button:hover {
+  background-color: #2575fc;     
+  color: #ffffff;                
+  box-shadow: 0 4px 10px rgba(37, 117, 252, 0.6);
+}
+
+#options button.clicked {
+  font-weight: bold;
+}
+
+#options button.clicked.correct {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.5);
+}
+
+#options button.clicked.incorrect {
+  background-color: #f44336;
+  color: white;
+  border-color: #f44336;
+  box-shadow: 0 4px 8px rgba(244, 67, 54, 0.5);
+}
+
+
+#weather input, #weather button {
+  padding: 10px;
+  width: 60%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#weather-result, #joke-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d5edc;
+}
+
+footer {
+  background: #2575fc;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
